@@ -108,7 +108,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -123,7 +123,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -134,7 +134,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+const exclaimThree = str => { return str.toUpperCase() + '!!!'}
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -148,7 +148,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -161,7 +161,17 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck (nameParam){
+    if (nameParam === "Steven"){
+      return 'What is up Steven?'
+    } else if (nameParam === "Bryan"){
+      return 'Hey Bryan!'
+    } else {
+      return `Cool name, ${nameParam}`
+    }
+}
+let nameGreeting = nameCheck("Steven")
+console.log(nameGreeting)
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -185,7 +195,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllNames (array){
+  for (let g = 0; g < array.length; g++){
+    console.log(array[g]);
+  }
+}
+printAllNames(namesArr);
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -209,8 +224,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
-
+const bestMovie = (movie) => `${movie} is the best movie ever!`
+movie = "Sharknado"
+console.log (bestMovie(movie));
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -234,7 +250,14 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+function theEliminator (x, y){
+  for (i=0; i<x.length; i++){
+    if (x[i] === y){
+      let oneLoser = x.splice(i, 1);
+    }
+  } console.log(x)
+}
+console.log(theEliminator(contestants, loser))
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -257,6 +280,15 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+function emailCheck (email){
+  const theEmail = string(email).trim();
+  if (email.include("@"){
+    return 'Email verified'
+  } else if{
+    return 'Must provide a valid email address'
+  })
+}
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
