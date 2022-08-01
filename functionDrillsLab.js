@@ -184,9 +184,19 @@ console.log(nameGreeting)
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
-
-
+function faveColorFinder (color) {
+if (color === "red"){
+  return "red is a great color"
+} else if (color === "green"){
+  return "green is a solid favorite color"
+} else if (color === "black"){
+  return "so trendy"
+} else {
+  return "You need to evaluate your favorite color choice"
+}
+}
+let colorRating = faveColorFinder('green')
+console.log(colorRating)
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
@@ -211,7 +221,15 @@ printAllNames(namesArr);
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd (number){
+  if (number%2 === 0){
+    return "that is not odd!"
+  } else {
+    return "That is odd indeed!"
+  }
+}
+let oddChecker = thatsOdd(25)
+console.log(oddChecker)
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -239,7 +257,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+const bigOrSmall = (arr) => {
+  let answers =[]
+  for (let i=0;i<arr.length; i++){
+    if (arr[i] > 100){
+      answers.push("big")
+    } else {
+      answers.push("small")
+    } 
+  } return answers
+  
+} 
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -298,7 +328,7 @@ console.log(emailCheck("mo oo oo @ gmail"))
 */
 
 function chocFrogs (){
-    
+
 }
 
 
