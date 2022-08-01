@@ -282,13 +282,15 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 function emailCheck (email){
-  const theEmail = string(email).trim();
+  email = string(email).trim();
   if (email.include("@"){
     return 'Email verified'
   } else if{
     return 'Must provide a valid email address'
   })
 }
+
+emailCheck("fe  fjsahdjf @ yaahoo ")
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
