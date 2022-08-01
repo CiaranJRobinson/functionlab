@@ -282,15 +282,14 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 function emailCheck (email){
-  email = string(email).trim();
-  if (email.include("@"){
+  email = String(email).trim();
+  if (email.includes("@")){
     return 'Email verified'
-  } else if{
+  } else {
     return 'Must provide a valid email address'
-  })
+  }
 }
-
-emailCheck("fe  fjsahdjf @ yaahoo ")
+console.log(emailCheck("mo oo oo @ gmail"))
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
@@ -298,7 +297,9 @@ emailCheck("fe  fjsahdjf @ yaahoo ")
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
+function chocFrogs (){
+    
+}
 
 
 ////////////////// PROBLEM 20 ////////////////////
