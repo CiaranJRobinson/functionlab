@@ -11,7 +11,9 @@
   Call the function.
 */
 
-//CODE HERE
+function helloWorld(){
+  console.log('Hello, World!');
+}
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -20,7 +22,9 @@
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
+const jsNinja = () => {
+  return 'I am a Javascript ninja!';
+}
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -30,7 +34,11 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(name){
+  console.log(name);
+}
+printName('Ciaran')
+
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -43,7 +51,10 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting (enterName){
+   console.log(`Hello, ${enterName}`);
+}
+greeting('Ciaran');
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -57,7 +68,15 @@
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => {
+  if(num1 > num2){
+    return num1;
+  } else if(num2 > num1){
+    return num2;
+  } else if (num1 === num2){
+    return (num1, num2)
+  }
+}
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -68,8 +87,13 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
-
+function add (x,y){
+  const addParse1 = parseInt(x);
+  const addParse2 = parseInt(y);
+  return addParse1 + addParse2;
+}
+let sum = add(1,2)
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
